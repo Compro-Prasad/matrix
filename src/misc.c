@@ -54,11 +54,11 @@ DATATYPE determinant(DATATYPE **A, int order)
 	assert(order > 0);
 	if (order == 1)
 		return A[0][0];
-	DATATYPE **b = (float **)malloc(sizeof(float *) * (order - 1));
+	DATATYPE **b = (DATATYPE **)malloc(sizeof(DATATYPE *) * (order - 1));
 	DATATYPE x = 0.0;
 	int i = 0, j, k, f1, f2 = -1;
 	for (; i < order - 1; i++)
-		b[i] = (float *)malloc(sizeof(float) * (order - 1));
+		b[i] = (DATATYPE *)malloc(sizeof(DATATYPE) * (order - 1));
 	for (i = 0; i < order; i++)
 	{
 		for (j = 1; j < order; j++)
