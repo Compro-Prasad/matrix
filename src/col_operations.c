@@ -1,3 +1,7 @@
+#include <assert.h>
+
+#include <matrix_macros.h>
+
 void swap_xthCol_and_ythCol
 (DATATYPE **A, int mRows, int nCols, int x, int y)
 {

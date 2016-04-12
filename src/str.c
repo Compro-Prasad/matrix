@@ -1,4 +1,9 @@
-//#include "str.h"
+#include <stdio.h>
+
+#include <matrix_macros.h>
+#include <row_operations.h>
+#include <col_operations.h>
+
 void trim_cmd(char *cmd)
 {
 	int i = 0, j, k;
